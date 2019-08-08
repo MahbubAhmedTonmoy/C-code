@@ -57,6 +57,27 @@ namespace cs
              foreach(string i in dt.Keys){
              Console.WriteLine(i +" : "+dt[i]);
            }
+            
+            
+           // Generic type 
+         SortedList<string,string> sl = new SortedList<string,string> ();
+         sl.Add("006", "M. Arif");
+         sl.Add("007", "Ritesh Saikia");
+         sl.Add("001", "Zara Ali");
+      
+         sl.Add("003", "Joe Holzner");
+         sl.Add("004", "Mausam Benazir Nur");
+         sl.Add("005", "M. Amlan");
+            sl.Add("002", "Abida Rehman");
+         
+         // get a collection of the keys. 
+         
+
+          foreach (string i in sl.Keys)
+            {
+                Console.WriteLine(i +" : "+sl[i]);
+            }
+        }
                
         }
     }
