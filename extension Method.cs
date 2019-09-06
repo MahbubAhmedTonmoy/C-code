@@ -1,7 +1,7 @@
 using System;
 
 
-public class class1
+public sealed class class1 // sealed class also use in extension method
 {
 	  public string Display()  
         {  
