@@ -63,3 +63,26 @@ namespace dddd
     }
        
 }
+
+// Action delegate  anonymous method  lambda expression
+             Action <int,int> v = myf;
+            v(2,4);
+            Action <int,int> w = delegate(int s,int t){
+                Console.WriteLine(s+t);
+            };
+            w(1,2);
+
+
+            Action<int,int> e = (a , b) => Console.WriteLine(a+b);
+            e(100,300);
+
+
+// function delegate  anonymous method  lambda expression
+            Func<string,string,string> Nmae = delegate (string a,string b){
+                return a +" "+ b;
+            };
+            Console.WriteLine(Nmae("mahbub","ahmed"));
+
+
+            Func<int,int,int,int> Mahbub = (a,b,c) =>a*b*c;
+            Console.WriteLine(Mahbub(8,2,2));
